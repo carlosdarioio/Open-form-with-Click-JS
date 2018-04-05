@@ -1,0 +1,34 @@
+<html>
+	<head>
+		<meta charset='utf-8'/>
+		<title></title>
+		<link rel="stylesheet" href="colorbox.css" />
+		<script src="jquery.min.js"></script>
+		<script src="jquery.colorbox.js"></script>
+		<script>
+			$(document).ready(function(){            //Size de ventana
+			 $(".inline").colorbox({inline:true, width:"90%",height:"90%"});
+			});
+            
+            function cv(y){            
+            $(".inline").colorbox({inline:true, width:"90%",height:"90%"});
+                $("#txt").html(y);
+                }
+		</script>
+	</head>
+	<body>		
+		<p><a class='inline' href="#inline_content" onclick="cv('lol')">Abrir formulario</a></p>
+		<p><a class='inline' href="#inline_content" onclick="cv('hgfhgfhgfhg')">Abrir formulario22</a></p>
+		<!-- Div content-->
+		<div style='display:none'>
+			<div id='inline_content' style='padding:10px; background:#fff;'>
+			<p>
+               <strong id="txt">
+                     <!-- <% document.write(contenido);%>-->
+               </strong>            
+            </p>			
+			</div>
+        </div>
+           <!-- fin Div content -->           
+	</body>
+</html>
